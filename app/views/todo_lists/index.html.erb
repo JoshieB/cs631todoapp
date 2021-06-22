@@ -14,7 +14,7 @@
       <tr>
         <td><%= todo_list.title %></td>
         <td><%= link_to 'Show', todo_list %></td>
-        <td><%= link_to 'Edit', edit_todo_list_path(todo_list) %></td>
+        <td><%= link_to 'Update', edit_todo_list_path(todo_list) %></td>
         <td><%= link_to 'Delete', todo_list, method: :delete, data: { confirm: 'Are you sure? This will also delete all tasks associated with the list.' } %></td>
       </tr>
     <% end %>
