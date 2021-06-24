@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_19_013158) do
+ActiveRecord::Schema.define(version: 2021_06_24_042237) do
+
+  create_table "previous_passwords", force: :cascade do |t|
+    t.string "salt", null: false
+    t.string "encrypted_password", null: false
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["encrypted_password"], name: "index_previous_passwords_on_encrypted_password"
+    t.index ["user_id", "created_at"], name: "index_previous_passwords_on_user_id_and_created_at"
+    t.index ["user_id"], name: "index_previous_passwords_on_user_id"
+  end
 
   create_table "tasks", force: :cascade do |t|
     t.integer "todo_list_id", null: false
@@ -46,6 +57,7 @@ ActiveRecord::Schema.define(version: 2021_06_19_013158) do
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
 
+  add_foreign_key "previous_passwords", "users"
   add_foreign_key "tasks", "todo_lists"
   add_foreign_key "todo_lists", "users"
 end

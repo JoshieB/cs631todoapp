@@ -51,6 +51,7 @@
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.9, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.8.0, ruby-2.7.3-p183) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise-secure_password (v2.0.1, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.3, ruby-2.7.3-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, ruby-2.7.3-p183) [gem]" level="application" />
