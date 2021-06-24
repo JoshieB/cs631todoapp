@@ -17,7 +17,7 @@
           <em><del><%= task.description %></del></em>
         </span>
             <%= link_to edit_todo_list_task_url(@todo_list.id, task.id), class: 'btn btn-dark' do %>
-              Edit Task
+              Update Task
             <% end %>
             <%= link_to 'Delete Task', [task.todo_list, task], method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %></td>
 
@@ -31,7 +31,7 @@
           <%= task.description %>
         </span>
             <%= link_to edit_todo_list_task_url(@todo_list.id, task.id), class: 'btn btn-success' do %>
-              Edit Task
+              Update Task
             <% end %>
             <%= link_to 'Delete Task', [task.todo_list, task], method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %></td>
           </div>

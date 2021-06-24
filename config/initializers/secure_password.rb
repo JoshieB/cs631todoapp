@@ -16,7 +16,7 @@ Devise.setup do |config|
    config.password_required_lowercase_count = 1
 
   # The number of numbers (0-9) required in a password:
-  # config.password_required_number_count = 1
+  config.password_required_number_count = 0
 
   # The number of special characters (!@#$%^&*()_+-=[]{}|') required in a password:
    config.password_required_special_character_count = 1
